@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To do list</title>
+</head>
+<body>
+<h3>Quer adicionar?</h3>
+<form action="/api/tarefa" method="post">
+    <input type="text" name="nome" id="nome" placeholder="Insira um nome">
+    <input type="text" name="descricao" id="descricao" placeholder="Insira uma descricao">
+    <input type="text" name="finalizada" id="finalizada" placeholder="finalizada?">
+    <input type="text" name="data_termino" id="data_termino" placeholder="Insira uma data_termino">
+    <input type="text" name="prioridade" id="prioridade" placeholder="Insira uma prioridade">
+    <button id="addButton" type="submit">Adicionar</button>
+</form>
+
+<table id="data-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Descrição</th>
+      <th>Finalizada</th>
+      <th>Data de Término</th>
+      <th>Prioridade</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Linhas da tabela serão adicionadas dinamicamente -->
+  </tbody>
+</table>
+
+
+<script src="script.js"></script>
+</body>
+</html>
